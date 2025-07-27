@@ -3,8 +3,8 @@
 FROM openjdk:17-jdk-slim
 
 # 環境変数の設定 (GumTreeのバージョンとダウンロードURL)
-ENV GUMTREE_VERSION="2.1.0" # 現在の最新安定版に合わせて適宜変更
-ENV GUMTREE_DOWNLOAD_URL="https://github.com/GumTreeDiff/gumtree/releases/download/v${GUMTREE_VERSION}/gumtree-${GUMTREE_VERSION}-dist.zip"
+ENV GUMTREE_VERSION="4.0.0-beta4"
+ENV GUMTREE_DOWNLOAD_URL="https://github.com/GumTreeDiff/gumtree/releases/download/v${GUMTREE_VERSION}/gumtree-${GUMTREE_VERSION}.zip"
 ENV GUMTREE_DIR="/opt/gumtree"
 
 # 必要なツールのインストール (wget: ダウンロード、unzip: 解凍)
